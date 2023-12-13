@@ -1,0 +1,320 @@
+.pay_page {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  .title {
+    font-family: TT Hoves;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+    svg {
+      position: absolute;
+      top: 30px;
+      right: 20px;
+    }
+  }
+  .main_page_left_side {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    svg {
+      position: absolute;
+      left: -50px;
+      position: absolute;
+      top: -25px;
+    }
+
+    .title_second_version {
+      margin-bottom: 61px;
+      position: relative;
+      font-family: TT Hoves;
+      font-size: 70px;
+      font-weight: 500;
+      line-height: 82px;
+      letter-spacing: 0em;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 6px;
+      }
+      #elipse {
+        position: absolute;
+        right: -65px;
+      }
+    }
+    .text {
+      font-family: TT Hoves;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 31px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: 306px;
+      height: 62px;
+      margin-bottom: 61px;
+    }
+    .button {
+      width: 220px;
+      height: 60px;
+      top: 591px;
+      left: 104px;
+      border-radius: 30px;
+      background: linear-gradient(295.15deg, #bfea81 9.27%, #daffa5 100.6%);
+      border: none;
+      font-family: TT Hoves;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: black;
+    }
+  }
+  .main_page_right_side {
+    display: inline-block;
+    /* Ellipse 67 */
+    .background_container {
+      position: relative;
+      width: 377px;
+      height: 353px;
+      left: 270px;
+      top: -205px;
+      background: rgb(137 185 69 / 93%);
+      filter: blur(250px);
+      z-index: 1;
+    }
+
+    #card {
+      width: 634px;
+      height: 501px;
+      position: relative;
+      z-index: 30;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 565px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 450px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        .head_text {
+          font-family: Roboto, sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 45px;
+          padding-top: 30px;
+          letter-spacing: 1px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main_page {
+    .main_page_container {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .main_page {
+    .main_page_container {
+      padding: 100px 0;
+      flex-direction: column-reverse;
+      align-items: center;
+      .left_side {
+        max-width: 600px;
+        text-align: center;
+        .head_text {
+          font-size: 45px;
+          line-height: 50px;
+        }
+        .bottom_text {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main_page {
+    .main_page_container {
+      flex-direction: column-reverse;
+      align-items: center;
+      .left_side {
+        max-width: 600px;
+        text-align: center;
+        .head_text {
+          font-size: 40px;
+          line-height: 45px;
+        }
+        .bottom_text {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 400px;
+        text-align: center;
+        .head_text {
+          font-size: 35px;
+          line-height: 40px;
+          text-align: start;
+        }
+        .bottom_text {
+          max-width: 400px;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .main_page {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main_page {
+    .main_page_container {
+      padding-bottom: 50px;
+
+      .left_side {
+        max-width: 350px;
+        text-align: center;
+        .head_text {
+          font-size: 30px;
+          line-height: 35px;
+          text-align: end;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+        .bottom_text {
+          max-width: 350px;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 300px;
+        .head_text {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+      .right_side_foto {
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main_page {
+    padding-left: 0;
+    padding-right: 0;
+    .main_page_container {
+      padding: 79px 0;
+      .left_side {
+        max-width: 320px;
+        .head_text {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      .right_side_foto {
+        img {
+          border-radius: 0;
+          width: 100vw;
+          height: 390px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        .bottom_text {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 385px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 240px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 355px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 220px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 200px;
+      }
+    }
+  }
+}
