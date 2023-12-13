@@ -1,28 +1,32 @@
 .navbar {
   width: 100%;
-  height: var(--navbar-height);
-  background: var(--inverted-bg-color-navbar);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // height: var(--navbar-height);
   padding: 20px;
   position: fixed;
+  top: 0;
   z-index: 9999;
   transition: height 0.5s;
+  .container {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    .links {
+      display: inline-block;
+      vertical-align: middle;
+      .mainLink {
+        cursor: pointer;
+        margin-right: 15px;
+        font-size: 20px;
+        color: var(--primary-color-navbar);
+        letter-spacing: 1px;
+        font-weight: 700;
+        transition: color 0.3s;
+      }
+    }
+  }
   .burger {
     display: none;
-  }
-  .links {
-    .mainLink {
-      cursor: pointer;
-      margin-right: 15px;
-      font-size: 20px;
-      color: var(--primary-color-navbar);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
   }
 }
 
@@ -70,18 +74,6 @@
   }
 }
 
-.logo {
-  font-family: "Museo Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--primary-color-navbar);
-  display: flex;
-  align-items: center;
-  img {
-    width: 35px;
-  }
-}
 @media screen and (max-width: 768px) {
   .navbar {
     .links {

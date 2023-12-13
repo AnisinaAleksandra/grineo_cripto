@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <MainPage />
+      <div className="background">
+        <MainPage />
+      </div>
     </>
   );
 }
