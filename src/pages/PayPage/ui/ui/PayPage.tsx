@@ -1,13 +1,43 @@
 import cls from "./PayPage.module.scss";
-// import logoTransparent from "src/shared/assets/logo_transparent.png";
-
+import cardMobile from "src/shared/assets/card_mobile.png";
+import ellipse from "src/shared/assets/Ellipse_pay_part.png";
+import card_left from "src/shared/assets/card_left.png";
+import card_right from "src/shared/assets/iconFromCardRight.svg";
+import Frame from "src/shared/assets/Frame.png";
+import arroTitle from "src/shared/assets/arroTitle.png";
 const PayPage = () => {
+  const majorCoins: { id: number; name: string }[] = [
+    {
+      id: 1,
+      name: "BTC",
+    },
+    {
+      id: 2,
+      name: "ETH",
+    },
+    {
+      id: 3,
+      name: "USDC",
+    },
+    {
+      id: 4,
+      name: "USDT",
+    },
+    {
+      id: 5,
+      name: "BUSD",
+    },
+    {
+      id: 6,
+      name: "TRX",
+    },
+  ];
   return (
     <div className={cls.pay_page} id="pay_page">
       <div className={cls.title}>
         Pay With Crypto
         <br />
-        Everywhere In The World{" "}
+        <span>Everywhere In The World</span>
         <svg
           width="62"
           height="60"
@@ -49,11 +79,46 @@ const PayPage = () => {
           </defs>
         </svg>
       </div>
-
-      <div className={cls.pay_page_left_side}>
-        <div className={cls.title_second_version}></div>
+      <div className={cls.content_container}>
+        <div className={cls.pay_page_left_side}>
+          <img src={cardMobile} alt="cardMobile" />
+          <img src={ellipse} alt="ellipse" id={cls.ellipse} />
+          <img src={Frame} alt="Frame" />
+        </div>
+        <div className={cls.pay_page_right_side}>
+          <div className={cls.title_second_version}>All Major Coins</div>
+          <div className={cls.major_coins_list}>
+            {majorCoins.map((coin) => (
+              <div className={cls.major_coins_list_item} key={coin.id}>
+                {coin.name}
+              </div>
+            ))}
+          </div>
+          <button className={cls.button}>Download App</button>
+        </div>
       </div>
-      <div className={cls.pay_page_right_side}></div>
+      <div className={cls.title} id={cls.ellipse_container}>
+        One App
+        <img src={arroTitle} alt="arroTitle" />
+        <br />
+        <span>Everything You Need</span>
+      </div>
+      <div className={cls.content_container}>
+        <div className={cls.card_container}>
+          <div className={cls.title_of_container}>
+            <span>2 Wallets - Crypto and Fiat</span>
+            <span>Top up your crypto wallet</span>
+          </div>
+          <img src={card_left} alt="card_left" />
+        </div>
+        <div className={cls.card_container}>
+          <img src={card_right} alt="card_right" />
+          <div className={cls.title_of_container} id={cls.right_card}>
+            <span>VISA card issued in the Grineo APP</span>
+            <span>Pay everywhere with crypto</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

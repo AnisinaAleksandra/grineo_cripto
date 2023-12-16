@@ -3,97 +3,228 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 200px;
+  box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
   .title {
     font-family: TT Hoves;
     font-size: 70px;
     font-weight: 500;
     line-height: 82px;
     letter-spacing: 0em;
-    text-align: center;
     position: relative;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    z-index: 30;
+    span {
+      z-index: 30;
+      position: relative;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      left: 0;
+      width: 338px;
+      height: 18px;
+      z-index: 1;
+      background-color: #bfea81;
+    }
+
     svg {
       position: absolute;
       top: 30px;
       right: 20px;
     }
   }
-  .main_page_left_side {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    svg {
-      position: absolute;
-      left: -50px;
-      position: absolute;
-      top: -25px;
-    }
 
-    .title_second_version {
-      margin-bottom: 61px;
-      position: relative;
-      font-family: TT Hoves;
-      font-size: 70px;
-      font-weight: 500;
-      line-height: 82px;
-      letter-spacing: 0em;
-      text-align: left;
-      display: flex;
-      align-items: center;
-      span {
-        margin-right: 6px;
-      }
-      #elipse {
-        position: absolute;
-        right: -65px;
-      }
+  #ellipse_container {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      width: 300px;
+      height: 77px;
+      border-radius: 50%;
+      border: 1px solid #bfea81;
+      transform: rotate(351deg);
+      background-color: transparent;
     }
-    .text {
-      font-family: TT Hoves;
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 31px;
-      letter-spacing: 0em;
-      text-align: left;
-      width: 306px;
-      height: 62px;
-      margin-bottom: 61px;
-    }
-    .button {
-      width: 220px;
-      height: 60px;
-      top: 591px;
-      left: 104px;
-      border-radius: 30px;
-      background: linear-gradient(295.15deg, #bfea81 9.27%, #daffa5 100.6%);
-      border: none;
-      font-family: TT Hoves;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 21px;
-      letter-spacing: 0em;
-      text-align: center;
-      color: black;
+    img {
+      margin-left: 40px;
     }
   }
-  .main_page_right_side {
-    display: inline-block;
-    /* Ellipse 67 */
-    .background_container {
-      position: relative;
-      width: 377px;
-      height: 353px;
-      left: 270px;
-      top: -205px;
-      background: rgb(137 185 69 / 93%);
-      filter: blur(250px);
-      z-index: 1;
+  .content_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &:last-child {
+      padding-top: 24px;
     }
-
-    #card {
-      width: 634px;
-      height: 501px;
+    .pay_page_left_side {
       position: relative;
-      z-index: 30;
+      #ellipse {
+        position: absolute;
+        left: -170px;
+        top: -400px;
+      }
+      img {
+        &:first-child {
+          z-index: 30;
+          position: relative;
+        }
+
+        &:last-child {
+          position: absolute;
+          left: -145px;
+          top: 91px;
+          z-index: 1;
+        }
+      }
+    }
+    .pay_page_right_side {
+      .title_second_version {
+        font-family: TT Hoves;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 47px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 50px;
+      }
+      .major_coins_list {
+        width: 420px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 24px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -304px;
+          right: -890px;
+          width: 1054px;
+          height: 757px;
+          border: 1px solid #ffffff1a;
+          border-radius: 50%;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          z-index: 1;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 551px;
+          height: 551px;
+          left: 437px;
+          top: 159px;
+          background: rgba(193, 255, 104, 0.37);
+          filter: blur(250px);
+        }
+
+        .major_coins_list_item {
+          width: 200px;
+          height: 50px;
+          z-index: 30;
+          background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.3)
+            ),
+            linear-gradient(
+              200.74deg,
+              rgba(214, 211, 194, 0.2) 0%,
+              rgba(92, 92, 92, 0.14) 100%
+            );
+          box-shadow: inset -1.47838px -0.912985px 2.39202px
+            rgba(250, 250, 250, 0.22);
+          backdrop-filter: blur(6.39033px);
+          border-radius: 33.8561px;
+
+          font-family: "TT Hoves";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          margin-bottom: 20px;
+        }
+      }
+      .button {
+        width: 220px;
+        height: 60px;
+        top: 591px;
+        left: 104px;
+        border-radius: 30px;
+        background: linear-gradient(295.15deg, #bfea81 9.27%, #daffa5 100.6%);
+        border: none;
+        font-family: TT Hoves;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+    }
+    .card_container {
+      padding-top: 34px;
+      width: 520px;
+      height: 251px;
+      border-radius: 30px;
+      background: #ffffff0f;
+      position: relative;
+      &:last-child {
+        top: 135px;
+      }
+      #right_card {
+        // position: relative;
+        bottom: -155px;
+      }
+      .title_of_container {
+        position: relative;
+
+        span {
+          display: block;
+        }
+        span:first-child {
+          font-family: TT Hoves;
+          font-size: 30px;
+          font-weight: 500;
+          line-height: 35px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+        span:last-child {
+          font-family: TT Hoves;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #b3b3b3;
+        }
+      }
+      img:last-child {
+        position: absolute;
+        bottom: -85px;
+        right: 70px;
+      }
+      img:first-child {
+        position: absolute;
+        bottom: 152px;
+        right: 70px;
+        background-color: #1d1d1d;
+        border-radius: 30px;
+      }
     }
   }
 }
