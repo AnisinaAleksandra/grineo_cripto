@@ -156,6 +156,9 @@
           align-items: center;
           color: #ffffff;
           margin-bottom: 20px;
+          svg {
+            margin-right: 8px;
+          }
         }
       }
       .button {
@@ -176,18 +179,27 @@
       }
     }
     .card_container {
-      padding-top: 34px;
       width: 520px;
       height: 251px;
       border-radius: 30px;
       background: #ffffff0f;
       position: relative;
+      &:first-child {
+        left: 35px;
+      }
       &:last-child {
-        top: 135px;
+        top: 140px;
+        left: -35px;
+      }
+      &#left_card {
+        .title_of_container {
+          padding-top: 24px;
+        }
       }
       #right_card {
-        // position: relative;
-        bottom: -155px;
+        bottom: -130px;
+        width: 300px;
+        margin: 0 auto;
       }
       .title_of_container {
         position: relative;
@@ -216,15 +228,20 @@
       img:last-child {
         position: absolute;
         bottom: -85px;
-        right: 70px;
+        right: 60px;
       }
       img:first-child {
         position: absolute;
         bottom: 152px;
-        right: 70px;
+        right: 60px;
         background-color: #1d1d1d;
         border-radius: 30px;
       }
+    }
+    .image_container {
+      z-index: 30;
+      position: relative;
+      top: 80px;
     }
   }
 }
