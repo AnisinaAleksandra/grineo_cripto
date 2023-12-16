@@ -332,7 +332,7 @@ const PayPage = () => {
           IOS and Android - The sexiest app on any operating system
         </div>
         <div className={cls.buttons_container}>
-          <botton className={cls.button_app}>
+          <button className={cls.button_app}>
             <svg
               width="27"
               height="33"
@@ -353,7 +353,7 @@ const PayPage = () => {
               <span>Download on the</span>
               <span>App Store</span>
             </div>
-          </botton>
+          </button>
           <button className={cls.button_app}>
             <svg
               width="34"
