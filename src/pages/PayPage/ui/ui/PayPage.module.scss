@@ -8,6 +8,7 @@
   box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
+
   .title {
     font-family: TT Hoves;
     font-size: 70px;
@@ -242,6 +243,50 @@
       z-index: 30;
       position: relative;
       top: 80px;
+    }
+  }
+  #download_container {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    .title_app_download {
+      font-family: "TT Hoves";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    .buttons_container {
+      display: flex;
+      align-items: center;
+      .button_app {
+        width: 173px;
+        height: 58px;
+        margin: 12px;
+        border: 1px solid #a6a6a6;
+        border-radius: 10px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .title_btn {
+          span {
+            display: block;
+            line-height: 1;
+            text-align: left;
+            &:first-child {
+              font-size: 12px;
+            }
+            &:last-child {
+              font-size: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }
