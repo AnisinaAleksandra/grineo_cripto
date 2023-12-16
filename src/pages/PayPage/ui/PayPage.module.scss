@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -16px -16px 90px 92px rgba(0, 0, 0, 0.8);
@@ -43,15 +43,16 @@
   }
 
   #ellipse_container {
+    padding-bottom: 30px;
     &::after {
       content: "";
       position: absolute;
-      bottom: -5px;
+      bottom: 20px;
       width: 300px;
       height: 77px;
       border-radius: 50%;
       border: 1px solid #bfea81;
-      transform: rotate(351deg);
+      transform: rotate(352deg);
       background-color: transparent;
     }
     img {
@@ -62,6 +63,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     &:last-child {
       padding-top: 24px;
     }
@@ -69,7 +71,7 @@
       position: relative;
       #ellipse {
         position: absolute;
-        left: -170px;
+        left: -100%;
         top: -400px;
       }
       img {
@@ -80,7 +82,7 @@
 
         &:last-child {
           position: absolute;
-          left: -145px;
+          left: -74%;
           top: 91px;
           z-index: 1;
         }

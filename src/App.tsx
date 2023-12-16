@@ -1,6 +1,7 @@
 import "./App.css";
+import { ChooseCardPage } from "./pages/ChooseCardPage";
 import { MainPage } from "./pages/MainPage/ui";
-import { PayPage } from "./pages/PayPage/ui";
+import { PayPage } from "./pages/PayPage";
 import { Navbar } from "./widgets/Navbar";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <MainPage />
       </div>
       <PayPage />
+      <ChooseCardPage />
     </>
   );
 }
