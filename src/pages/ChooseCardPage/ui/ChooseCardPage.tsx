@@ -5,7 +5,7 @@ import Flutter from "src/shared/assets/card_black.png";
 interface Card {
   id: string;
   nameCard: string;
-  image: string | null;
+  image: string;
   characteristicList: string[];
 }
 const ChooseCardPage = () => {
@@ -13,7 +13,7 @@ const ChooseCardPage = () => {
     {
       id: "null",
       nameCard: "",
-      image: null,
+      image: "",
       characteristicList: [
         "Card Type",
         "card issue & delivery fee",
@@ -84,9 +84,40 @@ const ChooseCardPage = () => {
         <div className={cls.choose_card_list}>
           {cards_list.map((card: Card) => (
             <div className={cls.card} key={card.id}>
-              <div className={cls.image}>{card.image}</div>
+              <div className={cls.image}>
+                <img src={card.image} alt={`${card.image}`} />
+              </div>
+              <div className={cls.name}>{card.nameCard}</div>
+              <div className={cls.card_charakteristics}>
+                {card.characteristicList.map((characteristic, index) => (
+                  <div
+                    className={cls.characteristic}
+                    key={`${characteristic}_${card.nameCard}_${index}`}
+                  >
+                    {characteristic}
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
+        </div>
+        <div className={cls.text}>
+          Online & Offline Payments, Apple Pay & Google Pay, PayPass
+          <br />
+          Bind your card to any payment system (netflix, amazon, spotify)
+        </div>
+        <div className={cls.preorder_container}>
+          <div className={cls.text_left}>
+            Preorder FREE <span>Grineo</span>
+            <br />
+            <span>VISA card</span> right now
+          </div>
+          <div className={cls.input_right}>
+            <input placeholder="Email" />
+            <button className={cls.button_preorder} type="submit">
+              Preorder Now
+            </button>
+          </div>
         </div>
       </div>
     </div>
