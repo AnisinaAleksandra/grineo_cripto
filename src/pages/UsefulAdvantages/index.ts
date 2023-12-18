@@ -1,3 +1,3 @@
-import { PayPageAsync } from "./ui/PayPage.async";
+import { UsefulAdvantagesAsync } from "./ui/UsefulAdvantages.async";
 
 export { UsefulAdvantagesAsync as UsefulAdvantages };

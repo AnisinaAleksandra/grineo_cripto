@@ -2,28 +2,152 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  padding-top: 125px;
-  .description {
+  flex-direction: column;
+  padding-bottom: 200px;
+  .useful_advantages_card_and_map {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 175px;
+    padding-bottom: 108px;
+    .description {
+      max-width: 500px;
+      .title {
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin-bottom: 15px;
+      }
+      .text {
+        width: 520px;
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+      }
+    }
+    .left_part {
+      &::before {
+        content: " ";
+        position: absolute;
+        width: 551px;
+        height: 551px;
+        left: -364px;
+
+        background: rgba(101, 153, 27, 0.6);
+        filter: blur(250px);
+      }
+    }
+  }
+  .content_container {
     .title {
       font-family: "TT Hoves";
       font-style: normal;
       font-weight: 500;
-      font-size: 30px;
-      line-height: 35px;
+      font-size: 60px;
+      line-height: 71px;
+      text-align: center;
       text-transform: capitalize;
       color: #ffffff;
-      margin-bottom: 15px;
+      .title_first_line {
+        position: relative;
+        #arrow_ring {
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      #arrow_loading {
+        position: relative;
+        margin-right: 12px;
+        top: 5px;
+      }
     }
-  }
-  .text {
-    width: 520px;
-    font-family: "TT Hoves";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #ffffff;
+    .content_info {
+      display: flex;
+      position: relative;
+      .description_text {
+        padding-top: 115px;
+        .title_of_description {
+          width: 455px;
+          height: 102px;
+          font-family: "TT Hoves";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 140%;
+          color: #ffffff;
+          margin-bottom: 30px;
+        }
+        .list_info {
+          ul {
+            padding-inline-start: 0;
+
+            li {
+              list-style: none;
+              display: flex;
+              margin-bottom: 20px;
+              .svg {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: grey;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .text {
+                width: 400px;
+                font-family: "TT Hoves";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                color: #b3b3b3;
+                margin-left: 14px;
+              }
+            }
+          }
+        }
+      }
+      .image_container {
+        position: absolute;
+        right: 0;
+        top: -60px;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 551px;
+          height: 551px;
+          left: 260px;
+          top: 100px;
+          z-index: 1;
+          background: rgba(101, 153, 27, 0.4);
+          filter: blur(250px);
+        }
+        &::before {
+          content: "";
+
+          position: absolute;
+          width: 551px;
+          height: 551px;
+          left: 571px;
+          top: -123px;
+
+          background: rgba(193, 255, 104, 0.37);
+          filter: blur(250px);
+        }
+        img {
+          position: relative;
+          z-index: 30;
+        }
+      }
+    }
   }
 }
 
