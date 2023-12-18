@@ -1,5 +1,6 @@
 import "./App.css";
 import { ChooseCardPage } from "./pages/ChooseCardPage";
+import { GreenPart } from "./pages/GreenPart";
 import { MainPage } from "./pages/MainPage/ui";
 import { PayPage } from "./pages/PayPage";
 import UsefulAdvantages from "./pages/UsefulAdvantages/ui/UsefulAdvantages";
@@ -15,6 +16,7 @@ function App() {
       <PayPage />
       <ChooseCardPage />
       <UsefulAdvantages />
+      <GreenPart />
     </>
   );
 }

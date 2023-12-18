@@ -1,0 +1,373 @@
+.useful_advantages {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+  .useful_advantages_card_and_map {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 175px;
+    padding-bottom: 108px;
+    .description {
+      max-width: 500px;
+      .title {
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin-bottom: 15px;
+      }
+      .text {
+        width: 520px;
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+      }
+    }
+    .left_part {
+      &::before {
+        content: " ";
+        position: absolute;
+        width: 551px;
+        height: 551px;
+        left: -364px;
+
+        background: rgba(101, 153, 27, 0.6);
+        filter: blur(250px);
+      }
+    }
+  }
+  .content_container {
+    .title {
+      font-family: "TT Hoves";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 71px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #ffffff;
+      .title_first_line {
+        position: relative;
+        #arrow_ring {
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      #arrow_loading {
+        position: relative;
+        margin-right: 12px;
+        top: 5px;
+      }
+    }
+    .content_info {
+      display: flex;
+      position: relative;
+      .description_text {
+        padding-top: 115px;
+        .title_of_description {
+          width: 455px;
+          height: 102px;
+          font-family: "TT Hoves";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 140%;
+          color: #ffffff;
+          margin-bottom: 30px;
+        }
+        .list_info {
+          ul {
+            padding-inline-start: 0;
+
+            li {
+              list-style: none;
+              display: flex;
+              margin-bottom: 20px;
+              .svg {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: grey;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .text {
+                width: 400px;
+                font-family: "TT Hoves";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                color: #b3b3b3;
+                margin-left: 14px;
+              }
+            }
+          }
+        }
+      }
+      .image_container {
+        position: absolute;
+        right: 0;
+        top: -60px;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 551px;
+          height: 551px;
+          left: 260px;
+          top: 100px;
+          z-index: 1;
+          background: rgba(101, 153, 27, 0.4);
+          filter: blur(250px);
+        }
+        &::before {
+          content: "";
+
+          position: absolute;
+          width: 551px;
+          height: 551px;
+          left: 571px;
+          top: -123px;
+
+          background: rgba(193, 255, 104, 0.37);
+          filter: blur(250px);
+        }
+        img {
+          position: relative;
+          z-index: 30;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 565px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 450px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        .head_text {
+          font-family: Roboto, sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 45px;
+          padding-top: 30px;
+          letter-spacing: 1px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main_page {
+    .main_page_container {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .main_page {
+    .main_page_container {
+      padding: 100px 0;
+      flex-direction: column-reverse;
+      align-items: center;
+      .left_side {
+        max-width: 600px;
+        text-align: center;
+        .head_text {
+          font-size: 45px;
+          line-height: 50px;
+        }
+        .bottom_text {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main_page {
+    .main_page_container {
+      flex-direction: column-reverse;
+      align-items: center;
+      .left_side {
+        max-width: 600px;
+        text-align: center;
+        .head_text {
+          font-size: 40px;
+          line-height: 45px;
+        }
+        .bottom_text {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 400px;
+        text-align: center;
+        .head_text {
+          font-size: 35px;
+          line-height: 40px;
+          text-align: start;
+        }
+        .bottom_text {
+          max-width: 400px;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .main_page {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main_page {
+    .main_page_container {
+      padding-bottom: 50px;
+
+      .left_side {
+        max-width: 350px;
+        text-align: center;
+        .head_text {
+          font-size: 30px;
+          line-height: 35px;
+          text-align: end;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+        .bottom_text {
+          max-width: 350px;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 300px;
+        .head_text {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+      .right_side_foto {
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main_page {
+    padding-left: 0;
+    padding-right: 0;
+    .main_page_container {
+      padding: 79px 0;
+      .left_side {
+        max-width: 320px;
+        .head_text {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      .right_side_foto {
+        img {
+          border-radius: 0;
+          width: 100vw;
+          height: 390px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        .bottom_text {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 385px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 240px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 355px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 220px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 200px;
+      }
+    }
+  }
+}
