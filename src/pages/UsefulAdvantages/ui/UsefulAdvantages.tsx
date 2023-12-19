@@ -4,6 +4,7 @@ import australia_map from "src/shared/assets/australia.png";
 import arrow_loading from "src/shared/assets/arrow_loading.png";
 import grineo_girl_arrow from "src/shared/assets/grineo_girl_arrow.png";
 import arrow_ring from "src/shared/assets/arrow_ring.png";
+
 const UsefulAdvantages = () => {
   return (
     <div className={cls.useful_advantages} id="useful_advantages">

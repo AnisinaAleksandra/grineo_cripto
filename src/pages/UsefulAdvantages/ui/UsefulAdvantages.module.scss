@@ -3,7 +3,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 200px;
+  position: relative;
+  z-index: 30;
   .useful_advantages_card_and_map {
     display: flex;
     justify-content: space-between;

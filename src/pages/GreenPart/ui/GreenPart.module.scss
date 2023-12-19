@@ -1,51 +1,20 @@
-.useful_advantages {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 200px;
-  .useful_advantages_card_and_map {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 175px;
-    padding-bottom: 108px;
-    .description {
-      max-width: 500px;
-      .title {
-        font-family: "TT Hoves";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 35px;
-        text-transform: capitalize;
-        color: #ffffff;
-        margin-bottom: 15px;
-      }
-      .text {
-        width: 520px;
-        font-family: "TT Hoves";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #ffffff;
-      }
-    }
-    .left_part {
-      &::before {
-        content: " ";
-        position: absolute;
-        width: 551px;
-        height: 551px;
-        left: -364px;
+#img {
+  position: absolute;
+  bottom: 575px;
+  z-index: 1;
+}
 
-        background: rgba(101, 153, 27, 0.6);
-        filter: blur(250px);
-      }
-    }
-  }
+.green_part {
+  background-color: #bfea81;
+  padding-top: 200px;
+
   .content_container {
-    .title {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    .title_first {
       font-family: "TT Hoves";
       font-style: normal;
       font-weight: 500;
@@ -53,98 +22,105 @@
       line-height: 71px;
       text-align: center;
       text-transform: capitalize;
-      color: #ffffff;
-      .title_first_line {
-        position: relative;
-        #arrow_ring {
-          position: absolute;
-          right: 0;
-        }
-      }
-
-      #arrow_loading {
-        position: relative;
-        margin-right: 12px;
-        top: 5px;
+      color: #0f0f0f;
+      position: relative;
+      &::after {
+        content: "";
+        width: 97px;
+        height: 97px;
+        position: absolute;
+        right: 247px;
+        top: -33px;
+        background-image: url("src/shared/assets/arrow_big.png");
       }
     }
-    .content_info {
+    .content {
       display: flex;
-      position: relative;
-      .description_text {
-        padding-top: 115px;
-        .title_of_description {
-          width: 455px;
-          height: 102px;
+      margin-left: -15px;
+      margin-right: -15px;
+      .container_image {
+        margin: 15px;
+
+        width: 630px;
+        height: 540px;
+        border-radius: 20px;
+        background-image: url("src/shared/assets/asian_young_couple.png");
+      }
+      .container_form {
+        width: 560px;
+        height: 460px;
+        margin: 15px;
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        background: #ffffff;
+        border-radius: 30px;
+
+        .title {
           font-family: "TT Hoves";
           font-style: normal;
           font-weight: 500;
-          font-size: 24px;
-          line-height: 140%;
-          color: #ffffff;
-          margin-bottom: 30px;
+          font-size: 40px;
+          line-height: 47px;
+          color: #000000;
+          margin-bottom: 45px;
         }
-        .list_info {
-          ul {
-            padding-inline-start: 0;
+        .info_list {
+          color: #000000;
 
-            li {
-              list-style: none;
+          .info_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .svg {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background-color: #bfea81;
               display: flex;
-              margin-bottom: 20px;
-              .svg {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: grey;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
-              .text {
-                width: 400px;
-                font-family: "TT Hoves";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 140%;
-                color: #b3b3b3;
-                margin-left: 14px;
-              }
+              align-items: center;
+              justify-content: center;
+            }
+            .text {
+              margin-left: 10px;
             }
           }
-        }
-      }
-      .image_container {
-        position: absolute;
-        right: 0;
-        top: -60px;
-        &::after {
-          content: "";
-          position: absolute;
-          width: 551px;
-          height: 551px;
-          left: 260px;
-          top: 100px;
-          z-index: 1;
-          background: rgba(101, 153, 27, 0.4);
-          filter: blur(250px);
-        }
-        &::before {
-          content: "";
+          .preorder_container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: flex-end;
+            input {
+              width: 290px;
+              height: 50px;
+              /* Rectangle 1 */
 
-          position: absolute;
-          width: 551px;
-          height: 551px;
-          left: 571px;
-          top: -123px;
+              box-sizing: border-box;
 
-          background: rgba(193, 255, 104, 0.37);
-          filter: blur(250px);
-        }
-        img {
-          position: relative;
-          z-index: 30;
+              border: 1px solid rgba(34, 34, 34, 0.4);
+              filter: drop-shadow(
+                0px 14.5322px 77.8512px rgba(191, 234, 129, 0.13)
+              );
+              border-radius: 10px;
+              background-color: transparent;
+              padding-left: 15px;
+            }
+            button {
+              width: 200px;
+              height: 50px;
+              color: #000000;
+              background: linear-gradient(
+                295.15deg,
+                #bfea81 9.27%,
+                #daffa5 100.6%
+              );
+              box-shadow: 0px 14.5322px 77.8512px rgba(191, 234, 129, 0.13);
+              border-radius: 10px;
+              border: none;
+              margin-left: 21px;
+            }
+          }
         }
       }
     }
