@@ -1,145 +1,74 @@
-.how_to_use_part {
-  position: relative;
-  padding-top: 260px;
+.stable_and_secure {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  div {
-    display: block;
-  }
+  padding-bottom: 50px;
+
   .title {
-    font-family: TT Hoves;
-    font-size: 70px;
+    font-family: "TT Hoves";
+    font-style: normal;
     font-weight: 500;
-    line-height: 82px;
-    letter-spacing: 0em;
-    position: relative;
+    font-size: 60px;
+    line-height: 71px;
     text-align: center;
-    display: block;
-    text-align: center;
-    z-index: 30;
-    margin-bottom: 40px;
     text-transform: capitalize;
-    img {
-      position: absolute;
-      top: 10px;
-      margin-left: 37px;
-    }
-    span {
-      display: block;
-      font-family: "TT Hoves";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 28px;
-      text-align: center;
-      margin-top: 16px;
-    }
+    color: #ffffff;
   }
   .content_container {
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 30px;
-    padding-bottom: 80px;
-    background: linear-gradient(
-      106.35deg,
-      rgba(32, 32, 32, 0.49) 3.31%,
-      rgba(66, 66, 66, 0.553) 108.82%
-    );
-    backdrop-filter: blur(5px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 30px;
-    margin-left: -42px;
-    margin-right: -42px;
-    .step_container {
-      width: 280px;
-      margin-bottom: 30px;
-      margin-left: 42px;
-      margin-right: 42px;
-      position: relative;
-      margin-bottom: 109px;
-      .number {
-        position: absolute;
-
-        width: 77px;
-        height: 140px;
-        font-family: "TT Hoves Pro Trial";
-        font-style: normal;
-        font-weight: 900;
-        font-size: 140px;
-        line-height: 176px;
-        text-transform: capitalize;
-        background: linear-gradient(180deg, #74ee52, #ffffff00);
-        // background-size: 100% 100%;
-        -webkit-background-clip: text;
-        -webkit-text-stroke: 4px transparent;
-
-        color: #4242428d;
-      }
-      .title_step {
-        position: relative;
-        top: 80px;
-        left: 32px;
-        font-family: "TT Hoves";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 35px;
-        text-transform: capitalize;
-      }
-      .text {
-        width: 230px;
-        position: relative;
-        top: 80px;
-        left: 32px;
-        bottom: -75px;
-        font-family: "TT Hoves";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: lowercase;
-        color: #b3b3b3;
-      }
-    }
-  }
-  .content_container_bottom {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    .left_container {
-      margin: 15px;
-      width: 630px;
-      height: 540px;
-      background-color: white;
-      border-radius: 20px;
+    .list_of_secure {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      margin-left: -15px;
+      margin-right: -15px;
 
-      font-family: "TT Hoves";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 50px;
-      line-height: 59px;
-      text-align: center;
+      .item_container {
+        position: relative;
+        display: flex;
+        padding: 26px;
+        width: 358px;
+        margin: 15px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(28.5px);
+        border-radius: 10px;
+        .item_svg {
+          display: inline;
+          margin-right: 20px;
+        }
+        .item_text {
+          display: inline;
+          .item_title {
+            font-family: "TT Hoves";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: #ffffff;
+          }
+          .list_secure {
+            ul {
+              list-style: none;
+              padding-inline-start: 0px;
 
-      color: #000000;
-    }
-    .right_container {
-      margin: 15px;
-      width: 630px;
-      height: 540px;
-      border-radius: 20px;
-      background-image: url("src/shared/assets/girl.png");
+              li {
+                font-family: "TT Hoves";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: capitalize;
+                color: #b3b3b3;
+                &::before {
+                  content: "•";
+                  color: greenyellow;
+                  margin-right: 7px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
