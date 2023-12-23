@@ -1,127 +1,109 @@
-#img {
-  position: absolute;
-  bottom: 1575px;
-  z-index: 1;
-}
-
-.green_part {
-  background-color: #bfea81;
-  padding-top: 200px;
-
-  .content_container {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 560px;
-    display: flex;
-    flex-direction: column;
-    .title_first {
+.how_to_use_part {
+  position: relative;
+  padding-top: 260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  div {
+    display: block;
+  }
+  .title {
+    font-family: TT Hoves;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 82px;
+    letter-spacing: 0em;
+    position: relative;
+    text-align: center;
+    display: block;
+    text-align: center;
+    z-index: 30;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    img {
+      position: absolute;
+      top: 10px;
+      margin-left: 37px;
+    }
+    span {
+      display: block;
       font-family: "TT Hoves";
       font-style: normal;
       font-weight: 500;
-      font-size: 60px;
-      line-height: 71px;
+      font-size: 24px;
+      line-height: 28px;
       text-align: center;
-      text-transform: capitalize;
-      color: #0f0f0f;
-      position: relative;
-      &::after {
-        content: "";
-        width: 97px;
-        height: 97px;
-        position: absolute;
-        right: 247px;
-        top: -33px;
-        background-image: url("src/shared/assets/arrow_big.png");
-      }
+      margin-top: 16px;
     }
-    .content {
-      display: flex;
-      margin-left: -15px;
-      margin-right: -15px;
-      .container_image {
-        margin: 15px;
+  }
+  .content_container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background: linear-gradient(
+      106.35deg,
+      rgba(32, 32, 32, 0.49) 3.31%,
+      rgba(66, 66, 66, 0.553) 108.82%
+    );
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+    margin-left: -42px;
+    margin-right: -42px;
+    .step_container {
+      width: 280px;
+      margin-bottom: 30px;
+      margin-left: 42px;
+      margin-right: 42px;
+      position: relative;
+      margin-bottom: 109px;
+      .number {
+        position: absolute;
 
-        width: 630px;
-        height: 540px;
-        border-radius: 20px;
-        background-image: url("src/shared/assets/asian_young_couple.png");
+        width: 77px;
+        height: 140px;
+        font-family: "TT Hoves Pro Trial";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 140px;
+        line-height: 176px;
+        text-transform: capitalize;
+        background: linear-gradient(180deg, #74ee52, #ffffff00);
+        // background-size: 100% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+
+        color: #4242428d;
       }
-      .container_form {
-        width: 560px;
-        height: 460px;
-        margin: 15px;
-        padding-top: 50px;
-        padding-left: 40px;
-        padding-right: 30px;
-        padding-bottom: 30px;
-        background: #ffffff;
-        border-radius: 30px;
-
-        .title {
-          font-family: "TT Hoves";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 40px;
-          line-height: 47px;
-          color: #000000;
-          margin-bottom: 45px;
-        }
-        .info_list {
-          color: #000000;
-
-          .info_item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-
-            .svg {
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              background-color: #bfea81;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-            .text {
-              margin-left: 10px;
-            }
-          }
-          .preorder_container {
-            margin-top: 50px;
-            display: flex;
-            justify-content: flex-end;
-            input {
-              width: 290px;
-              height: 50px;
-              /* Rectangle 1 */
-
-              box-sizing: border-box;
-
-              border: 1px solid rgba(34, 34, 34, 0.4);
-              filter: drop-shadow(
-                0px 14.5322px 77.8512px rgba(191, 234, 129, 0.13)
-              );
-              border-radius: 10px;
-              background-color: transparent;
-              padding-left: 15px;
-            }
-            button {
-              width: 200px;
-              height: 50px;
-              color: #000000;
-              background: linear-gradient(
-                295.15deg,
-                #bfea81 9.27%,
-                #daffa5 100.6%
-              );
-              box-shadow: 0px 14.5322px 77.8512px rgba(191, 234, 129, 0.13);
-              border-radius: 10px;
-              border: none;
-              margin-left: 21px;
-            }
-          }
-        }
+      .title_step {
+        position: relative;
+        top: 80px;
+        left: 32px;
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        text-transform: capitalize;
+      }
+      .text {
+        width: 230px;
+        position: relative;
+        top: 80px;
+        left: 32px;
+        bottom: -75px;
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: lowercase;
+        color: #b3b3b3;
       }
     }
   }
