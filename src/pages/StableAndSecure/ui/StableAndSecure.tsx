@@ -1,5 +1,8 @@
 import cls from "./StableAndSecure.module.scss";
-
+import visaPartner from "src/shared/assets/partnersList/visa.png";
+import shaypePartner from "src/shared/assets/partnersList/shaype.png";
+import crystalPartner from "src/shared/assets/partnersList/crystal.png";
+import sumsubPartner from "src/shared/assets/partnersList/sumsub.png";
 const StableAndSecure = () => {
   const listOfSecure = [
     {
@@ -163,6 +166,7 @@ const StableAndSecure = () => {
       adress: "Address: Level 14, 5 Martin Place, Sydney, 2000, NSW, Australia",
     },
   ];
+
   return (
     <div className={cls.stable_and_secure} id="stable_and_secure">
       <div className={cls.title}>
@@ -200,6 +204,15 @@ const StableAndSecure = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className={cls.partners_list}>
+          <div className={cls.partners_title}>Our partners:</div>
+          <div className={cls.partners_list_container}>
+            <img src={visaPartner} alt="visaPartner" />
+            <img src={shaypePartner} alt="shaypePartner" />
+            <img src={crystalPartner} alt="crystalPartner" />
+            <img src={sumsubPartner} alt="sumsubPartner" />
+          </div>
         </div>
       </div>
     </div>

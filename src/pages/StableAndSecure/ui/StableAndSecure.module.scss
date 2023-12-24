@@ -70,6 +70,29 @@
         }
       }
     }
+    .partners_list {
+      .partners_title {
+        margin-top: 35px;
+        margin-bottom: 46px;
+        text-align: center;
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        text-transform: capitalize;
+        color: #bfea81;
+      }
+      .partners_list_container {
+        display: flex;
+        justify-content: center;
+        img {
+          margin-left: 25px;
+          margin-right: 25px;
+          filter: invert(0.5);
+        }
+      }
+    }
   }
 }
 

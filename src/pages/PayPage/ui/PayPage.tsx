@@ -1,6 +1,6 @@
 import cls from "./PayPage.module.scss";
 import cardMobile from "src/shared/assets/card_mobile.png";
-import ellipse from "src/shared/assets/Ellipse_pay_part.png";
+import ellipse from "src/shared/assets/background/Ellipse_pay_part.png";
 import card_left from "src/shared/assets/card_left.png";
 import card_right from "src/shared/assets/iconFromCardRight.svg";
 import Frame from "src/shared/assets/Frame.png";
