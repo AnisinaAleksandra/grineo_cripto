@@ -1,5 +1,5 @@
 import cls from "./GreenPart.module.scss";
-import backElliplse from "src/shared/assets/backElliplse.png";
+import backElliplse from "src/shared/assets/background/backElliplse.png";
 
 const GreenPart = () => {
   return (

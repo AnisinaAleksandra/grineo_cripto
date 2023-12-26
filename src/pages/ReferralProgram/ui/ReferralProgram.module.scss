@@ -1,155 +1,103 @@
-.choose_card_page {
-  position: relative;
-  padding-top: 260px;
-  width: 106%;
-  left: -50px;
+.referral_program {
   margin: 0 auto;
+  color: black;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  background-image: url("/src/shared/assets/background/big_ellipse.png");
-  background-size: cover;
-  align-items: center;
-  div {
-    display: block;
-  }
-  .title {
-    font-family: TT Hoves;
-    font-size: 70px;
-    font-weight: 500;
-    line-height: 82px;
-    letter-spacing: 0em;
-    color: black;
-    position: relative;
-    text-align: center;
-    display: block;
-    text-align: center;
-    z-index: 30;
-    margin-bottom: 40px;
-    svg {
-      position: absolute;
-      top: -31px;
-      right: -50px;
-    }
-  }
+  justify-content: center;
   .content_container {
-    max-width: 1200px;
-    color: black;
+    padding-top: 110px;
 
-    .choose_card_list {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: -16px;
-      margin-right: -16px;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 100% 100%;
+    background-image: url("src/shared/assets/background/white_background.png");
 
-      .card {
-        width: 300px;
-        margin: 16px;
-        border: 1px solid #8080803c;
-        border-radius: 10px;
-        &:first-child {
-          background-color: #f4f4f4;
-          border: none;
-          .name {
-            height: 24px;
-          }
-          .card_charakteristics {
-            .characteristic {
-              text-align: left;
-              padding-left: 15px;
-            }
-          }
-        }
-        .image {
-          height: 185px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .name {
-          text-align: center;
-          padding-bottom: 10px;
-        }
-        .card_charakteristics {
-          .characteristic {
-            padding-top: 11px;
-            padding-bottom: 11px;
-            text-align: center;
-            border-top: 1px solid #8080802a;
-          }
-        }
-      }
-    }
-    .text {
-      margin-top: 20px;
-      text-align: center;
-      font-family: "TT Hoves";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      text-transform: capitalize;
-      color: #666666;
-    }
-    .preorder_container {
-      background-color: rgb(138, 81, 193);
-      padding-top: 35px;
-      padding-bottom: 35px;
-      border-radius: 10px;
-      color: white;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      position: relative;
-      bottom: -60px;
-
-      box-shadow: 0px 10px 60px rgba(138, 81, 193, 0.47);
-      .text_left {
+    .right_container {
+      margin-left: 90px;
+      .title {
         font-family: "TT Hoves";
         font-style: normal;
         font-weight: 500;
-        font-size: 30px;
-        line-height: 140%;
-        color: #ffffff;
+        font-size: 70px;
+        line-height: 82px;
+        text-transform: capitalize;
+        color: #000000;
+        margin-bottom: 46px;
+      }
+      .text {
         span {
-          color: #bfea81;
+          width: 440px;
+          display: block;
+          font-family: "TT Hoves";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 140%;
+          margin-bottom: 30px;
         }
       }
-      .input_right {
-        input {
-          width: 290px;
-          height: 50px;
-          margin-right: 21px;
-          background-color: transparent;
-          border: 1px solid black;
-          border-radius: 10px;
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          filter: drop-shadow(
-            0px 14.5322px 77.8512px rgba(191, 234, 129, 0.13)
-          );
-          outline: none;
-          padding-left: 10px;
-          &::placeholder {
-            color: rgba(255, 255, 255, 0.4);
-            padding-left: 10px;
+      .social_container {
+        display: flex;
+        align-items: center;
+        .social_links {
+          display: inline;
+          svg {
+            margin-right: 10px;
+            &:last-child {
+              margin-right: 32px;
+            }
           }
         }
         button {
-          width: 200px;
-          height: 50px;
-          background-color: white;
+          display: inline;
+
           border: none;
+          width: 220px;
+          height: 60px;
+          background: #bfea81;
+          box-shadow: 0px 14px 75px rgba(191, 234, 129, 0.13);
+          border-radius: 30px;
+
           font-family: "TT Hoves";
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
-          line-height: 22px;
-          text-align: center;
+          line-height: 21px;
           text-transform: capitalize;
+
           color: #0f0f0f;
-          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .customer_support {
+    max-width: 1290px;
+    height: 362px;
+
+    background: linear-gradient(98.66deg, #333333 11.29%, #1d1d1d 97.89%);
+    border-radius: 30px;
+    position: relative;
+    bottom: 60px;
+    .text_container {
+      .itle_customer_support {
+        /* 24/7 customer support */
+
+        position: absolute;
+        width: 529px;
+        height: 59px;
+        left: 185px;
+        top: 7941.99px;
+
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 59px;
+        /* identical to box height */
+        text-transform: capitalize;
+
+        span {
+          color: #bfea81;
         }
       }
     }

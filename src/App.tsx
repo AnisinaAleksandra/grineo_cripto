@@ -4,6 +4,7 @@ import { GreenPart } from "./pages/GreenPart";
 import { HowToUsePart } from "./pages/HowToUsePart";
 import { MainPage } from "./pages/MainPage/ui";
 import { PayPage } from "./pages/PayPage";
+import { ReferralProgram } from "./pages/ReferralProgram";
 import { StableAndSecure } from "./pages/StableAndSecure";
 import UsefulAdvantages from "./pages/UsefulAdvantages/ui/UsefulAdvantages";
 import { Navbar } from "./widgets/Navbar";
@@ -21,6 +22,7 @@ function App() {
       <GreenPart />
       <HowToUsePart />
       <StableAndSecure />
+      <ReferralProgram />
     </>
   );
 }
