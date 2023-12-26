@@ -1,6 +1,6 @@
 import cls from "./ReferralProgram.module.scss";
 import refferalProgram from "src/shared/assets/planet_img.png";
-
+import supportGirl from "src/shared/assets/supportGirl.png";
 const ReferralProgram = () => {
   return (
     <div className={cls.referral_program} id="referral_program">
@@ -221,6 +221,9 @@ const ReferralProgram = () => {
               All humans, no bots
             </div>
           </div>
+        </div>
+        <div className={cls.support_girl}>
+          <img src={supportGirl} alt="supportGirl" />
         </div>
       </div>
     </div>

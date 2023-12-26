@@ -1,122 +1,111 @@
-.referral_program {
-  margin: 0 auto;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .content_container {
-    padding-top: 110px;
+.title_faq {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 82px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
 
-    display: flex;
-    flex-wrap: wrap;
-    background-size: 100% 100%;
-    background-image: url("src/shared/assets/background/white_background.png");
-
-    .right_container {
-      margin-left: 90px;
-      .title {
-        font-family: "TT Hoves";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 70px;
-        line-height: 82px;
-        text-transform: capitalize;
-        color: #000000;
-        margin-bottom: 46px;
-      }
-      .text {
-        span {
-          width: 440px;
-          display: block;
-          font-family: "TT Hoves";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 140%;
-          margin-bottom: 30px;
-        }
-      }
-      .social_container {
-        display: flex;
-        align-items: center;
-        .social_links {
-          display: inline;
-          svg {
-            margin-right: 10px;
-            &:last-child {
-              margin-right: 32px;
-            }
-          }
-        }
-        button {
-          display: inline;
-
-          border: none;
-          width: 220px;
-          height: 60px;
-          background: #bfea81;
-          box-shadow: 0px 14px 75px rgba(191, 234, 129, 0.13);
-          border-radius: 30px;
-
-          font-family: "TT Hoves";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 21px;
-          text-transform: capitalize;
-
-          color: #0f0f0f;
-        }
-      }
-    }
-  }
-  .customer_support {
-    max-width: 1210px;
-    height: 322px;
-    padding-top: 40px;
-    padding-left: 80px;
-    background: linear-gradient(98.66deg, #333333 11.29%, #1d1d1d 97.89%);
-    border-radius: 30px;
+.accordion {
+  button {
     position: relative;
-    bottom: 60px;
-    .text_container {
-      .title_customer_support {
-        font-family: "TT Hoves";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 50px;
-        line-height: 59px;
-        text-transform: capitalize;
-        color: #ffffff;
-        margin-bottom: 30px;
-        span {
-          color: #bfea81;
-        }
-      }
-      .plus_lists {
-        .plus {
-          display: flex;
-          align-items: center;
-          margin-bottom: 20px;
-          svg {
-            margin-right: 14px;
-          }
-          font-family: "TT Hoves";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 140%;
-          color: #b3b3b3;
-        }
-      }
+    width: 100%;
+    padding: 24px 0;
+    color: white;
+    border: none;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
+    cursor: pointer;
+
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    color: #b3b3b3;
+    background-color: transparent;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: #bfea81;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s;
+      transform: rotate(-90deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: #bfea81;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s;
     }
 
-    .support_girl {
-      position: absolute;
-      top: -123px;
-      right: 0;
+    span {
+      display: inline-block;
+      width: 50px;
+      height: 39px;
+      padding-top: 11px;
+      text-align: center;
+      vertical-align: middle;
+      background: #bfea81;
+      border-radius: 5px;
+      font-family: "TT Hoves";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #0f0f0f;
+      margin-right: 15px;
     }
   }
+  .accordion_close {
+    p {
+      display: none;
+    }
+  }
+  p {
+    height: 100%;
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #b3b3b3;
+    transition-property: height;
+    transition-duration: 500ms;
+  }
+
+  button:hover {
+  }
+  .accordion_open {
+    &::after {
+      transform: rotate(0);
+    }
+    p {
+      height: 100%;
+      font-family: "TT Hoves";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #b3b3b3;
+      transition-property: height;
+      transition-duration: 500ms;
+    }
+  }
+  // button:focus {
+  //   outline: none;
+  // }
 }
 
 @media screen and (max-width: 1350px) {

@@ -1,4 +1,5 @@
 import "./App.css";
+import { Accordion } from "./pages/Accordion";
 import { ChooseCardPage } from "./pages/ChooseCardPage";
 import { GreenPart } from "./pages/GreenPart";
 import { HowToUsePart } from "./pages/HowToUsePart";
@@ -23,6 +24,7 @@ function App() {
       <HowToUsePart />
       <StableAndSecure />
       <ReferralProgram />
+      <Accordion />
     </>
   );
 }

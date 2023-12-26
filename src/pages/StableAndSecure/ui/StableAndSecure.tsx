@@ -196,7 +196,7 @@ const StableAndSecure = () => {
                 <div className={cls.list_secure}>
                   <ul>
                     {item.listSecure.map((el) => (
-                      <li>{el}</li>
+                      <li key={`${item.id}_${el}`}>{el}</li>
                     ))}
                   </ul>
                 </div>
