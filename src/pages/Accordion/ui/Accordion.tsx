@@ -1,5 +1,6 @@
 import { useState } from "react";
 import cls from "./Accordion.module.scss";
+import slogan from "src/shared/assets/slogan.png";
 const items: {
   id: number;
   isOpen: boolean;
@@ -86,10 +87,9 @@ const Accordion = () => {
       }
     );
   };
-  console.log(itemsList);
 
   return (
-    <>
+    <div className={cls.accordion_part} id="accordion_part">
       <div className={cls.title_faq}>FAQ</div>
       <div className={cls.accordion}>
         {itemsList.map((item) => (
@@ -105,7 +105,11 @@ const Accordion = () => {
           </div>
         ))}
       </div>
-    </>
+      <div className={cls.slogan}>
+        <img src={slogan} alt="slogan" />
+        <div className={cls.background_green}></div>
+      </div>
+    </div>
   );
 };
 

@@ -1,13 +1,12 @@
-#img {
-  position: absolute;
-  bottom: 1575px;
-  z-index: 1;
-}
-
 .green_part {
   background-color: #bfea81;
   padding-top: 200px;
-
+  position: relative;
+  #img {
+    position: absolute;
+    bottom: 595px;
+    z-index: 1;
+  }
   .content_container {
     max-width: 1200px;
     margin: 0 auto;

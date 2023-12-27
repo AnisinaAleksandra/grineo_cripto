@@ -1,16 +1,58 @@
 .footer {
+  padding-top: 42px;
+  padding-bottom: 54px;
   width: 100%;
-  height: var(--navbar-height);
-  background: var(--inverted-bg-color);
+  background: #bfea81;
   display: flex;
-  align-items: center;
-  padding: 40px;
-  justify-content: center;
-  text-align: center;
-  .container {
-    .text {
-      color: var(--primary-color-navbar);
+  flex-direction: column;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0f0f0f;
+  .container_top {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    ul {
+      margin: 0;
+      li {
+        list-style: none;
+        margin-bottom: 5px;
+      }
     }
-    max-width: 1240px;
+    .socials {
+      .title {
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: #0f0f0f;
+        margin-bottom: 16px;
+      }
+      .social_links {
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+    .scan_qr_code {
+      .title {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .container_bottom {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    .link_part {
+      &:first-child {
+        width: 335px;
+      }
+    }
   }
 }

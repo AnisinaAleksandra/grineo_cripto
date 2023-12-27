@@ -224,6 +224,7 @@ const ReferralProgram = () => {
         </div>
         <div className={cls.support_girl}>
           <img src={supportGirl} alt="supportGirl" />
+          <div className={cls.background_green}></div>
         </div>
       </div>
     </div>

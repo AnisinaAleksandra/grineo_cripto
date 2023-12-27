@@ -8,6 +8,7 @@ import { PayPage } from "./pages/PayPage";
 import { ReferralProgram } from "./pages/ReferralProgram";
 import { StableAndSecure } from "./pages/StableAndSecure";
 import UsefulAdvantages from "./pages/UsefulAdvantages/ui/UsefulAdvantages";
+import { Footer } from "./widgets/Footer";
 import { Navbar } from "./widgets/Navbar";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <StableAndSecure />
       <ReferralProgram />
       <Accordion />
+      <Footer />
     </>
   );
 }

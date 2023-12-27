@@ -78,6 +78,7 @@
     background: linear-gradient(98.66deg, #333333 11.29%, #1d1d1d 97.89%);
     border-radius: 30px;
     position: relative;
+    z-index: 30;
     bottom: 60px;
     .text_container {
       .title_customer_support {
@@ -115,6 +116,17 @@
       position: absolute;
       top: -123px;
       right: 0;
+
+      .background_green {
+        position: absolute;
+        width: 551px;
+        height: 551px;
+        left: 500px;
+        top: 300px;
+        background: rgba(101, 153, 27, 0.6);
+        filter: blur(250px);
+        z-index: 1;
+      }
     }
   }
 }

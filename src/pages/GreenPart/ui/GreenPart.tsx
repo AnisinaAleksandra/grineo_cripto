@@ -4,8 +4,8 @@ import backElliplse from "src/shared/assets/background/backElliplse.png";
 const GreenPart = () => {
   return (
     <>
-      <img src={backElliplse} alt="backElliplse" id={cls.img} />
-      <div className={cls.green_part} id="green_part">
+      <div className={cls.green_part} id={cls.green_part}>
+        <img src={backElliplse} alt="backElliplse" id={cls.img} />
         <div className={cls.content_container}>
           <div className={cls.title_first}>
             Life has become more
