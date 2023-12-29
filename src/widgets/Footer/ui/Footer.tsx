@@ -105,7 +105,7 @@ export const Footer = () => {
         </div>
         <div className={cls.scan_qr_code}>
           <div className={cls.title}>↘Scan now</div>
-          <div className={cls.title}>
+          <div className={cls.gr_code_container}>
             <img src={qr_code} alt="qr_code" />
           </div>
         </div>
