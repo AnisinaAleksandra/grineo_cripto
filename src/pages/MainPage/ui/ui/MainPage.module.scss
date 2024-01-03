@@ -224,8 +224,7 @@
 
 @media screen and (max-width: 670px) {
   .main_page {
-    flex-direction: column-reverse;
-    padding-top: 100px;
+    flex-direction: column;
     .main_page_left_side {
       svg {
         position: absolute;
@@ -268,7 +267,7 @@
     .main_page_right_side {
       margin: 0 auto;
       #card {
-        top: 0;
+        top: 25px;
       }
       .background_container {
         display: none;

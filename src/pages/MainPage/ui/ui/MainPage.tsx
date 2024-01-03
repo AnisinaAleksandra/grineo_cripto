@@ -2,6 +2,7 @@ import cls from "./MainPage.module.scss";
 import logoTransparent from "src/shared/assets/logo_transparent.png";
 import elipse from "src/shared/assets/Ellipse_main.png";
 import card from "src/shared/assets/card.png";
+
 const MainPage = () => {
   return (
     <div className={cls.main_page} id={cls.main}>
