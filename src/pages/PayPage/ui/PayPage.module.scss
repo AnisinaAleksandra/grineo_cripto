@@ -334,6 +334,12 @@
 }
 @media screen and (max-width: 900px) {
   .pay_page {
+    #download_container {
+      .title_app_download {
+        padding-top: 12px;
+        width: 300px;
+      }
+    }
     #ellipse_container {
       padding-top: 49px;
     }
@@ -359,6 +365,241 @@
         img {
           position: relative;
           top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pay_page {
+    padding-bottom: 0;
+    #ellipse_container {
+      &::after {
+        bottom: 31px;
+        width: 175px;
+        height: 46px;
+      }
+    }
+    .content_container {
+      .pay_page_left_side {
+        img:first-child {
+          top: -60px;
+        }
+        img:last-child {
+          left: -271px;
+          width: 100%;
+        }
+      }
+      .pay_page_right_side {
+        .major_coins_list {
+          &::after {
+            top: -251px;
+            right: -890px;
+            width: 995px;
+            height: 640px;
+          }
+        }
+      }
+    }
+    .title {
+      padding-top: 30px;
+      font-size: 40px;
+      line-height: unset;
+      &::after {
+        width: 195px;
+      }
+      svg {
+        top: 0;
+      }
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .pay_page {
+    #ellipse_container {
+      padding-top: 0;
+      &::after {
+        width: 132px;
+        height: 40px;
+      }
+    }
+    .content_container {
+      .card_container {
+        width: 345px;
+        .title_of_container {
+          font-family: "TT Hoves";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          /* identical to box height */
+          text-align: center;
+          text-transform: capitalize;
+        }
+      }
+      .pay_page_left_side {
+        img:first-child {
+          display: block;
+          margin: 0 auto;
+          width: 80%;
+          top: -45px;
+        }
+      }
+      .pay_page_right_side {
+        position: relative;
+        top: -60px;
+        .title_second_version {
+          font-size: 24px;
+          margin-bottom: 19px;
+          text-transform: capitalize;
+        }
+        .major_coins_list {
+          justify-content: space-around;
+          .major_coins_list_item {
+            width: 164px;
+            height: 50px;
+          }
+        }
+      }
+    }
+    .title {
+      padding-top: 30px;
+      font-size: 30px;
+      line-height: unset;
+      &::after {
+        width: 177px;
+        height: 8px;
+      }
+      svg {
+        top: 0;
+      }
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .pay_page {
+    .content_container {
+      .card_container {
+        height: 187px;
+        .title_of_container {
+          span:first-child {
+            font-size: 24px;
+          }
+        }
+        img:last-child {
+          right: 37px;
+        }
+        &:last-child {
+          top: 182px;
+        }
+        #right_card {
+          bottom: -80px;
+        }
+      }
+      .image_container {
+        img {
+          width: 130px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pay_page {
+    .content_container {
+      .card_container {
+        width: 300px;
+        height: 165px;
+        #right_card {
+          bottom: -60px;
+        }
+      }
+      .pay_page_right_side {
+        .major_coins_list {
+          width: 360px;
+        }
+      }
+    }
+    #download_container {
+      .buttons_container {
+        .button_app {
+          width: 120px;
+          height: 40px;
+          .title_btn {
+            span:first-child {
+              font-size: 10px;
+            }
+            span:last-child {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pay_page {
+    .content_container {
+      .pay_page_right_side {
+        .major_coins_list {
+          width: 305px;
+          .major_coins_list_item {
+            width: 146px;
+          }
+        }
+        .button {
+          width: 186px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pay_page {
+    .title {
+      font-size: 25px;
+      &:after {
+        width: 121px;
+      }
+    }
+    #download_container {
+      .title_app_download {
+        width: 285px;
+      }
+    }
+    .content_container {
+      .card_container {
+        width: 285px;
+        height: 155px;
+        img:first-child {
+          right: 26px;
+        }
+        img:last-child {
+          right: 30px;
+        }
+        #right_card {
+          bottom: -46px;
+        }
+        .title_of_container {
+        }
+      }
+      .pay_page_left_side {
+        img:last-child {
+          left: -74%;
+          top: 25px;
         }
       }
     }
