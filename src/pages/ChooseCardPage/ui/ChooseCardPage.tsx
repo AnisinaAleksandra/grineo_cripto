@@ -23,6 +23,7 @@ const ChooseCardPage = () => {
         "Referral Bonus",
       ],
     },
+
     {
       id: "Cocoon",
       nameCard: "Cocoon",
@@ -83,7 +84,7 @@ const ChooseCardPage = () => {
       <div className={cls.content_container}>
         <div className={cls.choose_card_list}>
           {cards_list.map((card: Card) => (
-            <div className={cls.card} key={card.id}>
+            <div className={cls.card} key={`${card.id}`}>
               <div className={cls.image}>
                 <img src={card.image} alt={`${card.image}`} />
               </div>
@@ -94,6 +95,11 @@ const ChooseCardPage = () => {
                     className={cls.characteristic}
                     key={`${characteristic}_${card.nameCard}_${index}`}
                   >
+                    <span>
+                      <strong>
+                        {cards_list[0].characteristicList[index]}:
+                      </strong>
+                    </span>{" "}
                     {characteristic}
                   </div>
                 ))}
