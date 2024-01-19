@@ -33,6 +33,7 @@
         background: rgba(255, 255, 255, 0.06);
         backdrop-filter: blur(28.5px);
         border-radius: 10px;
+
         .item_svg {
           display: inline;
           margin-right: 20px;
@@ -107,6 +108,20 @@
       .partners_list {
         .partners_list_container {
           flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .stable_and_secure {
+    .title {
+    }
+    .content_container {
+      .list_of_secure {
+        .item_container {
+          width: 200px;
         }
       }
     }
