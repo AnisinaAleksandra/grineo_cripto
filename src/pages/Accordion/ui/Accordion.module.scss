@@ -109,9 +109,6 @@
         transition-duration: 500ms;
       }
     }
-    // button:focus {
-    //   outline: none;
-    // }
   }
   .slogan {
     position: relative;
@@ -136,221 +133,178 @@
 }
 
 @media screen and (max-width: 1350px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        max-width: 565px;
+  .accordion_part {
+    max-width: 1000px;
+    .title_faq {
+      font-size: 45px;
+    }
+
+    .accordion {
+      button {
+        &::after {
+        }
+        &::before {
+        }
+
+        span {
+        }
+      }
+      .accordion_close {
+        p {
+        }
+      }
+      p {
+      }
+
+      button:hover {
+      }
+      .accordion_open {
+        &::after {
+        }
+        p {
+        }
+      }
+    }
+    .slogan {
+      img {
+      }
+
+      .background_green {
       }
     }
   }
 }
 
-@media screen and (max-width: 1110px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        max-width: 450px;
+@media screen and (max-width: 1024px) {
+  .accordion_part {
+    max-width: 725px;
+    .title_faq {
+      font-size: 45px;
+    }
+
+    .accordion {
+      button {
+        &::after {
+        }
+        &::before {
+        }
+
+        span {
+        }
+      }
+      .accordion_close {
+        p {
+        }
+      }
+      p {
+      }
+
+      button:hover {
+      }
+      .accordion_open {
+        &::after {
+        }
+        p {
+        }
       }
     }
-  }
-}
-@media screen and (max-width: 1000px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        .head_text {
-          font-family: Roboto, sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 40px;
-          line-height: 45px;
-          padding-top: 30px;
-          letter-spacing: 1px;
-          padding-bottom: 30px;
-        }
+    .slogan {
+      img {
+      }
+
+      .background_green {
       }
     }
   }
 }
 
-@media screen and (max-width: 950px) {
-  .main_page {
-    .main_page_container {
-      justify-content: center;
+@media screen and (max-width: 760px) {
+  .accordion_part {
+    max-width: 560px;
+    .title_faq {
+      font-size: 40px;
     }
-  }
-}
 
-@media screen and (max-width: 878px) {
-  .main_page {
-    .main_page_container {
-      padding: 100px 0;
-      flex-direction: column-reverse;
-      align-items: center;
-      .left_side {
-        max-width: 600px;
-        text-align: center;
-        .head_text {
-          font-size: 45px;
-          line-height: 50px;
+    .accordion {
+      button {
+        &::after {
         }
-        .bottom_text {
-          max-width: 600px;
-          margin: 0 auto;
+        &::before {
         }
+
+        span {
+          width: 40px;
+          height: 29px;
+          padding-top: 5px;
+        }
+      }
+      .accordion_close {
+        p {
+        }
+      }
+      p {
+      }
+
+      button:hover {
+      }
+      .accordion_open {
+        &::after {
+        }
+        p {
+        }
+      }
+    }
+    .slogan {
+      img {
+      }
+
+      .background_green {
       }
     }
   }
 }
 
-@media screen and (max-width: 700px) {
-  .main_page {
-    .main_page_container {
-      flex-direction: column-reverse;
-      align-items: center;
-      .left_side {
-        max-width: 600px;
-        text-align: center;
-        .head_text {
-          font-size: 40px;
-          line-height: 45px;
-        }
-        .bottom_text {
-          max-width: 400px;
-        }
-      }
-    }
-  }
-}
 @media screen and (max-width: 600px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        max-width: 400px;
-        text-align: center;
-        .head_text {
-          font-size: 35px;
-          line-height: 40px;
-          text-align: start;
-        }
-        .bottom_text {
-          max-width: 400px;
-          text-align: end;
-        }
-      }
+  .accordion_part {
+    max-width: 560px;
+    .title_faq {
+      font-size: 40px;
     }
-  }
-}
 
-@media screen and (max-width: 530px) {
-  .main_page {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .main_page {
-    .main_page_container {
-      padding-bottom: 50px;
+    .accordion {
+      button {
+        &::after {
+        }
+        &::before {
+        }
 
-      .left_side {
-        max-width: 350px;
-        text-align: center;
-        .head_text {
-          font-size: 30px;
-          line-height: 35px;
-          text-align: end;
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }
-        .bottom_text {
-          max-width: 350px;
-          text-align: end;
+        span {
+          width: 40px;
+          height: 29px;
+          padding-top: 5px;
         }
       }
-    }
-  }
-}
+      .accordion_close {
+        p {
+        }
+      }
+      p {
+      }
 
-@media screen and (max-width: 450px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        max-width: 300px;
-        .head_text {
-          font-size: 25px;
-          line-height: 30px;
-        }
+      button:hover {
       }
-      .right_side_foto {
-        img {
-          width: 250px;
-          height: 250px;
+      .accordion_open {
+        &::after {
+        }
+        p {
         }
       }
     }
-  }
-}
+    .slogan {
+      img {
+      }
 
-@media screen and (max-width: 430px) {
-  .main_page {
-    padding-left: 0;
-    padding-right: 0;
-    .main_page_container {
-      padding: 79px 0;
-      .left_side {
-        max-width: 320px;
-        .head_text {
-          font-size: 20px;
-          line-height: 25px;
-        }
-      }
-      .right_side_foto {
-        img {
-          border-radius: 0;
-          width: 100vw;
-          height: 390px;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 415px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        .bottom_text {
-          padding-left: 30px;
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 385px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        max-width: 240px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 355px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        max-width: 220px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 325px) {
-  .main_page {
-    .main_page_container {
-      .left_side {
-        max-width: 200px;
+      .background_green {
       }
     }
   }
