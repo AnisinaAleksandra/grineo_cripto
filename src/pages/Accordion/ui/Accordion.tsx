@@ -98,8 +98,8 @@ const Accordion = () => {
               onClick={() => handleClick(item.id)}
               className={item.isOpen ? cls.accordion_open : cls.accordion_close}
             >
-              <span>{item.id}</span>
-              {item.title}
+              <span className={cls.item_number}>{item.id}</span>
+              <span>{item.title}</span>
             </button>
             {item.isOpen && <p>{item.content}</p>}
           </div>
