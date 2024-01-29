@@ -173,7 +173,24 @@
       font-size: 35px;
     }
     .accordion {
+      p {
+        font-size: 16px;
+        padding-left: 10px;
+      }
       button {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 22px;
+        &::before {
+          width: 15px;
+        }
+        &::after {
+          width: 15px;
+          top: 49%;
+        }
         span:last-child {
           display: inline-block;
           width: 65%;
@@ -193,6 +210,20 @@
     max-width: 360px;
     .title_faq {
       font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .accordion_part {
+    .accordion {
+      button {
+        .item_number {
+          padding-top: 2px;
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
   }
 }
