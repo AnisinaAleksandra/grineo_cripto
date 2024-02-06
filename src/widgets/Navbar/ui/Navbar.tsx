@@ -26,8 +26,6 @@ export const Navbar = () => {
             duration={500}
             onClick={() => setLinksVariant(false)}
           >
-            {/* {t("About")}
-             */}
             About
           </Link>
           <Link
@@ -40,7 +38,6 @@ export const Navbar = () => {
             duration={500}
             onClick={() => setLinksVariant(false)}
           >
-            {/* {t("Card")} */}
             Card
           </Link>
           <Link
@@ -53,7 +50,6 @@ export const Navbar = () => {
             duration={500}
             onClick={() => setLinksVariant(false)}
           >
-            {/* {t("course")} */}
             Course
           </Link>
           <Link
@@ -66,7 +62,6 @@ export const Navbar = () => {
             duration={500}
             onClick={() => setLinksVariant(false)}
           >
-            {/* {t("Faq")} */}
             Faq
           </Link>
           <Link
@@ -79,7 +74,6 @@ export const Navbar = () => {
             duration={500}
             onClick={() => setLinksVariant(false)}
           >
-            {/* {t("Contact")} */}
             Contact
           </Link>
         </div>

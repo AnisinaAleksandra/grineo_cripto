@@ -1,6 +1,5 @@
 .navbar {
   width: 100%;
-  // height: var(--navbar-height);
   padding: 20px;
   position: fixed;
   top: 0;
@@ -80,8 +79,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .navbar {
+    .container {
+      max-width: 900px;
+      padding-right: 10px;
+    }
     .links {
       .mainLink {
         font-size: 16px;
@@ -90,10 +93,32 @@
   }
 }
 
+@media screen and (max-width: 740px) {
+  .navbar {
+    .container {
+      max-width: 900px;
+      padding-right: 10px;
+      img {
+        width: 35%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 628px) {
   .navbar {
+    .container {
+      .links {
+        display: none;
+        .mainLink {
+          font-size: 14px;
+        }
+      }
+    }
     .burger {
       display: block;
+      position: absolute;
+      right: 65px;
+      top: 32px;
       .btn_line {
         width: 30px;
         height: 3px;
@@ -103,18 +128,14 @@
         transform-origin: center;
       }
     }
-    .links {
-      display: none;
-      .mainLink {
-        font-size: 14px;
-      }
-    }
   }
   .navbar_open {
+    background-color: #494949eb;
+
     .burger {
       position: absolute;
       top: 28px;
-      right: 20px;
+      right: 65px;
       display: flex;
       flex-direction: column;
       cursor: pointer;
