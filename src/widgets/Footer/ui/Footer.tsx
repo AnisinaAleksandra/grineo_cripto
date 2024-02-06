@@ -17,8 +17,6 @@ export const Footer = () => {
             <li>Coins</li>
             <li>Fees & limits</li>
           </ul>
-        </div>
-        <div className={cls.menu_right}>
           <ul>
             <li>FAQ</li>
             <li>Helpdesk</li>
@@ -27,6 +25,7 @@ export const Footer = () => {
             <li>Sitemap</li>
           </ul>
         </div>
+        {/* <div className={cls.menu_right}></div> */}
         <div className={cls.socials}>
           <div className={cls.title}>Our socials:</div>
           <div className={cls.social_links}>

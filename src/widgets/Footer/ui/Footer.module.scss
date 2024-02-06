@@ -17,6 +17,8 @@
     justify-content: space-between;
     margin-bottom: 35px;
     ul {
+      display: inline-block;
+      vertical-align: top;
       margin: 0;
       li {
         list-style: none;
@@ -52,6 +54,118 @@
     .link_part {
       &:first-child {
         width: 335px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    .container_top {
+      justify-content: space-around;
+      ul {
+        li {
+        }
+      }
+      .socials {
+        .title {
+        }
+        .social_links {
+          svg {
+          }
+        }
+      }
+      .scan_qr_code {
+        .title {
+        }
+      }
+    }
+    .container_bottom {
+      justify-content: space-around;
+      .link_part {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .footer {
+    .container_top {
+      max-width: 80%;
+      margin: 0 auto;
+      padding-bottom: 16px;
+      img {
+        width: 80%;
+      }
+      ul {
+        li {
+        }
+      }
+      .socials {
+        .title {
+        }
+        .social_links {
+          svg {
+          }
+        }
+      }
+      .scan_qr_code {
+        .title {
+          font-size: 14px;
+        }
+        img {
+          width: 50%;
+        }
+      }
+    }
+    .container_bottom {
+      max-width: 80%;
+      margin: 0 auto;
+      .link_part {
+        &:first-child {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .footer {
+    .container_top {
+      flex-wrap: wrap;
+      text-align: center;
+      img {
+      }
+      ul {
+        padding-inline-start: 0;
+        li {
+        }
+      }
+      .socials {
+        .title {
+        }
+        .social_links {
+          svg {
+          }
+        }
+      }
+      .scan_qr_code {
+        .title {
+        }
+        img {
+        }
+      }
+    }
+    .container_bottom {
+      flex-wrap: wrap;
+      .link_part {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        &:first-child {
+        }
       }
     }
   }
