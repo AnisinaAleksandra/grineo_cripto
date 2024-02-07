@@ -3,7 +3,7 @@ import qr_code from "src/shared/assets/qr_code.png";
 import logo_footer from "src/shared/assets/logo_footer.png";
 export const Footer = () => {
   return (
-    <div className={cls.footer}>
+    <div className={cls.footer} id="footer">
       <div className={cls.container_top}>
         <div className={cls.logo}>
           <img src={logo_footer} alt="logo_footer" />

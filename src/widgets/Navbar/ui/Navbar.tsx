@@ -19,7 +19,7 @@ export const Navbar = () => {
           <Link
             className={cls.mainLink}
             activeClass="active"
-            to="main"
+            to="about"
             spy={true}
             smooth={true}
             offset={-70}
@@ -29,7 +29,7 @@ export const Navbar = () => {
             About
           </Link>
           <Link
-            to="about"
+            to="choose_card_page"
             className={cls.mainLink}
             activeClass="active"
             spy={true}
@@ -41,7 +41,7 @@ export const Navbar = () => {
             Card
           </Link>
           <Link
-            to="projects"
+            to="pay_page"
             className={cls.mainLink}
             activeClass="active"
             spy={true}
@@ -53,7 +53,7 @@ export const Navbar = () => {
             Course
           </Link>
           <Link
-            to="contacts"
+            to="accordion_part"
             className={cls.mainLink}
             activeClass="active"
             spy={true}
@@ -65,7 +65,7 @@ export const Navbar = () => {
             Faq
           </Link>
           <Link
-            to="contacts"
+            to="footer"
             className={cls.mainLink}
             activeClass="active"
             spy={true}
