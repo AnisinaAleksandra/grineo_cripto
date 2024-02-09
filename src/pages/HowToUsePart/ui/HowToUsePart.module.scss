@@ -51,7 +51,6 @@
       rgba(66, 66, 66, 0.553) 108.82%
     );
     backdrop-filter: blur(5px);
-    /* Note: backdrop-filter has minimal browser support */
     border-radius: 30px;
     margin-left: -42px;
     margin-right: -42px;
@@ -74,7 +73,6 @@
         line-height: 176px;
         text-transform: capitalize;
         background: linear-gradient(180deg, #74ee52, #ffffff00);
-        // background-size: 100% 100%;
         -webkit-background-clip: text;
         -webkit-text-stroke: 4px transparent;
 

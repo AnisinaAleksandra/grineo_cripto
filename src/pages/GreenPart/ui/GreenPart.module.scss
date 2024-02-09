@@ -128,8 +128,6 @@
 
 @media screen and (max-width: 1350px) {
   .green_part {
-    #img {
-    }
     .content_container {
       .title_first {
         &::after {
@@ -148,22 +146,12 @@
           height: 400px;
           padding: 10px 15px;
 
-          .title {
-          }
           .info_list {
             .info_item {
               margin-bottom: 5px;
-              .svg {
-              }
-              .text {
-              }
             }
             .preorder_container {
               margin-top: 15px;
-              input {
-              }
-              button {
-              }
             }
           }
         }
@@ -204,10 +192,6 @@
           .info_list {
             .info_item {
               margin-bottom: 5px;
-              .svg {
-              }
-              .text {
-              }
             }
             .preorder_container {
               margin-top: 15px;
@@ -215,8 +199,6 @@
               align-items: center;
               input {
                 margin-bottom: 15px;
-              }
-              button {
               }
             }
           }
@@ -228,8 +210,6 @@
 
 @media screen and (max-width: 850px) {
   .green_part {
-    #img {
-    }
     .content_container {
       .title_first {
         font-size: 40px;
