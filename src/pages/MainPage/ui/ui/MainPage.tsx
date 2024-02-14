@@ -2,6 +2,7 @@ import cls from "./MainPage.module.scss";
 import logoTransparent from "src/shared/assets/logo_transparent.png";
 import elipse from "src/shared/assets/Ellipse_main.png";
 import card from "src/shared/assets/card.png";
+import { ModalCall } from "../../../../widgets/ModalCall";
 
 const MainPage = () => {
   return (
@@ -57,7 +58,7 @@ const MainPage = () => {
         <div className={cls.text}>
           Crypto payments have never been so close and easy
         </div>
-        <button className={cls.button}>Download the app</button>
+        <ModalCall title="Download the app" />
       </div>
       <div className={cls.main_page_right_side}>
         <img src={card} alt="elipse" id={cls.card} />

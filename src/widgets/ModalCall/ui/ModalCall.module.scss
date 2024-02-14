@@ -1,0 +1,19 @@
+.modal_container {
+  display: inline;
+  button {
+    z-index: 99999999;
+    width: 220px;
+    height: 60px;
+    border-radius: 30px;
+    background: linear-gradient(295.15deg, #bfea81 9.27%, #daffa5 100.6%);
+    border: none;
+    font-family: TT Hoves;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+}

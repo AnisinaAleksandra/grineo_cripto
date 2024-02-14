@@ -7,6 +7,7 @@ import Frame from "src/shared/assets/Frame.png";
 import arroTitle from "src/shared/assets/arroTitle.png";
 import arrowRing from "src/shared/assets/arrow_ring.png";
 import { ReactNode } from "react";
+import { ModalCall } from "../../../widgets/ModalCall";
 
 const PayPage = () => {
   const majorCoins: { id: number; name: string; svg?: ReactNode }[] = [
@@ -299,7 +300,7 @@ const PayPage = () => {
               </div>
             ))}
           </div>
-          <button className={cls.button}>Download App</button>
+          <ModalCall title="Download the app" />
         </div>
       </div>
       <div className={cls.title} id={cls.ellipse_container}>

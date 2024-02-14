@@ -10,6 +10,7 @@
   background-image: url("/src/shared/assets/background/big_ellipse.png");
   background-size: cover;
   align-items: center;
+
   div {
     display: block;
   }
@@ -122,6 +123,9 @@
         }
       }
       .input_right {
+        div {
+          display: inline;
+        }
         input {
           width: 290px;
           height: 50px;

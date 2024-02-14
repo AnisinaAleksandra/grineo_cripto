@@ -2,6 +2,7 @@ import cls from "./ChooseCardPage.module.scss";
 import Cocoon from "src/shared/assets/card_purple.png";
 import Morpho from "src/shared/assets/card1_green.png";
 import Flutter from "src/shared/assets/card_black.png";
+import { ModalCall } from "../../../widgets/ModalCall";
 interface Card {
   id: string;
   nameCard: string;
@@ -120,9 +121,7 @@ const ChooseCardPage = () => {
           </div>
           <div className={cls.input_right}>
             <input placeholder="Email" />
-            <button className={cls.button_preorder} type="submit">
-              Preorder Now
-            </button>
+            <ModalCall title="Preorder Now" />
           </div>
         </div>
       </div>
